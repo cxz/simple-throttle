@@ -1,4 +1,4 @@
-# Simple::Throttle
+# Throttle
 
 ## Installation
 
