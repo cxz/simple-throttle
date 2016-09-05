@@ -2,7 +2,7 @@ require 'spec_helper'
 
 require_relative '../dummy_proxy'
 
-module Throttle::TimeWindow
+module SimpleThrottle::TimeWindow
   describe Runner do
 
     before do
@@ -21,7 +21,7 @@ module Throttle::TimeWindow
       let(:executions) { limit }
 
       it 'does not sleep' do
-        runner = Throttle::DummyProxy.new(interval_seconds, limit)
+        runner = SimpleThrottle::DummyProxy.new(interval_seconds, limit)
         runner.call(executions)
 
         expect(runner.count).to eq(executions)
@@ -34,7 +34,7 @@ module Throttle::TimeWindow
 
       it 'sleeps' do
 
-        runner = Throttle::DummyProxy.new(interval_seconds, limit)
+        runner = SimpleThrottle::DummyProxy.new(interval_seconds, limit)
         runner.call(executions)
 
         expect(runner.count).to eq(executions)

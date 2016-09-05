@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 
-module Throttle
+module SimpleThrottle
   class DummyProxy
     attr_accessor :count
     attr_accessor :sleeps

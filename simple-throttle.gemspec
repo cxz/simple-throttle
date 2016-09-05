@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'throttle/version'
+require 'simple_throttle/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "simple-throttle"
-  spec.version       = Throttle::VERSION
+  spec.name          = "simple_throttle"
+  spec.version       = SimpleThrottle::VERSION
   spec.authors       = ["Alexandre Maia"]
   spec.email         = ["alexandre.maia@gmail.com"]
   spec.summary       = %q{Limit amount of executions with time windows.}
-  spec.homepage      = "https://www.github.com/cxz/simple-throttle"
+  spec.homepage      = "https://www.github.com/cxz/simple-simple_throttle"
   spec.license          = %q{MIT}
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
